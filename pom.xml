@@ -71,11 +71,15 @@
   </scm>
 
   <distributionManagement>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-    </repository>
+     <repository>
+       <id>nexus-snapshots</id>
+       <url>http://35.231.94.187:8081/#browse/browse/components:maven-releases</url>
+     </repository>
+                  
+     <snapshotRepository>
+        <id>nexus-snapshots</id>
+        <url>http://35.231.94.187:8081/#browse/browse/components:maven-snapshots</url>
+     </snapshotRepository>
   </distributionManagement>
 
   <properties>
